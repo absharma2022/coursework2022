@@ -1,18 +1,19 @@
-//This the code to see what kind of triangle is by looking at side of trianlge
+// this is the c code to find type of triangle based on sides of triangles
+
 #include<stdio.h>
 #include<math.h>
-void main()
+
+int main()
 {
- float a,b,c;
- printf("Etner the all three sides \n");
- scanf("%f%f%f",&a,&b,&c);
- if(a==b && b==c)
- printf("The triangle is equilateral triangle");
- else if(a==b || b==c || a==c)
- printf("The triangle is isoceles triangle");
- else 
- printf("The triangle is scalene triangle");
+float a1 ,a2,a3;
+printf("Please enter the side of triangle \n");
+scanf("%f%f%f",&a1,&a2,&a3);
+ if(a1==a2 && a1==a3)
+printf("The triangle is equitlateral triangle \n");
+else if(a1==a2 || a1==a3 || a2==a3)
+printf("The triangle is isosceles triangle\n");
+else
+printf("The triangle is  scalne triangle \n");
 
- 
-
+return 0;
 }

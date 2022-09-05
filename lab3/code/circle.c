@@ -1,14 +1,20 @@
-// C programming for Area of circle and perimeter 
+// this is the c code to find the area and perimeter of a given circle
 
 #include<stdio.h>
 #include<math.h>
-//double pi=22/7;
+
 void main()
 {
-double r, area, peri,pi=3.14;
-printf("Please enter the radius of circle \n");
-scanf("%lf",&r);
-area=pi*r*r;
+float r, area, peri,pi=(float)22/7;
+printf("Please enter the radius of the circle \n");
+scanf("%f",&r);
+
+area = pi*r*r;
 peri=2*pi*r;
-printf("Area of the circle is = %lf \n Primeter of the circle is = %lf",area,peri);
+
+printf("Area of the circle is = %0.4f \n The perimeter of the circel is = %0.4f \n", area, peri);
+
+
+
+
 }

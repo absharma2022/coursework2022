@@ -1,14 +1,19 @@
-// This is the c code to find factorial of any given number
+// this is c code to find factorial of a given number
+
 #include<stdio.h>
 #include<math.h>
+
 int main()
 {
-int n, i,fac=1;
-printf("Enter any positive integr \n");
+int n,i,fact=1;
+printf("Please enter an integer number \n");
 scanf("%d",&n);
 for(i=1;i<=n;i++)
-fac=fac*i;
-printf("factorial of given number is = %d\n",fac);
+{
+fact=fact*i;
+}
+printf("The factorial of a given number is = %d\n", fact);
 
 return 0;
+
 }
