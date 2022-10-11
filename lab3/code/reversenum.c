@@ -5,14 +5,13 @@
 
 int main()
 {
-int n,rev=0,r,i;
+int n,rev=0,rem,i;
 printf("Please enter an integer number \n");
 scanf("%d",&n);
-for(i=1;i<100;i++)
+for(i=1;i>0;i++)
 {
-
-r=n%10;
-rev=rev*10+r;
+rem=n%10;
+rev=rev*10+rem;
 n=n/10;
 if(n==0)
 break;

@@ -11,7 +11,7 @@ scanf("%d",&n);
 while(i<n)
 {
 if(n%i==0)
-{printf("the entered integer number is not prime number \n");
+{
 flag=1;
 break;
 }
@@ -19,5 +19,7 @@ i=i+1;
 }
 if(flag==0)
 printf("The entered number is a prime number \n");
+else
+printf("the entered integer number is not prime number \n");
 return 0;
 }
