@@ -9,7 +9,7 @@ int main()
     scanf("%d",&n);
     rem=1;
     i=0;
-    while(n>=0)
+    while(n>0)
     {
         rem=n%10;
         n=n/10;
@@ -22,10 +22,11 @@ int main()
         {
             mul=mul*rem;
         }
-        if(n==0)
-        break;
+        //if(n==0)
+        //break;
 
     }
+   
     printf("number of digits in the entered number are = %d\n",i);
     printf("sum of even digits are = %d\n",sum);
     printf("multiplication of odd digits are = %d\n",mul);
